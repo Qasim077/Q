@@ -1,0 +1,108 @@
+{% extends "base.html"%}
+{% block header %}Home{% endblock %}
+{% block subheader %}{% endblock %}
+{% block content %}
+
+
+<style>
+ /* Add the font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10 px;
+  padding: 20px; /* Add padding around the container */
+  box-sizing: border-box; /* Include padding and border in the width */
+  flex-direction: column; /* Change flex-direction to column */
+  /* Change the font */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  border: 3px solid #dddddd; /* Increase the border thickness and change the color */
+  flex-grow: 1; /* Adjust the flex-grow value */
+  flex-shrink: 1; /* Add flex-shrink for equal sizing */
+  margin-bottom: 20px; /* Add margin between the boxes */
+  /* Change the font */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.section:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last box */
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold; /* Set font weight to bold for titles */
+  color: #333333;
+}
+
+.section .content {
+  background-color: rgba(255, 255, 255, 0.7); /* Set the transparency level */
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+  max-height: 400px; /* Set the max height for the content */
+  overflow-y: auto; /* Allow the content to scroll if it exceeds the max height */
+}
+
+.section .content .line {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 10px;
+  /* Change the font color for the main content */
+  color: #666666; /* This is a slightly lighter shade of gray */
+}
+
+.section .content .line:last-child {
+  border-bottom: none;
+}
+</style>
+
+<div class="container">
+    <div class="section" id="upload-section">
+        <h4>Please upload a section of the syllabus: </h4>
+        <br>
+        <form method='POST' enctype='multipart/form-data'>
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </div>
+
+    <div class="section">
+      <h2>Lesson Plan</h2>
+      <div class="content">
+        {% for line in response %}
+        <div class="line">{{ line }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  
+    <div class="section">
+      <h2>Questions</h2>
+      <div class="content">
+        {% for line in questions %}
+        <div class="line">{{ line }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  
+    <div class="section">
+      <h2>Activity</h2>
+      <div class="content">
+        {% for line in activity %}
+        <div class="line">{{ line }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+a) Economic growth:
+- Economic growth is the increase in a country's production of goods and services over time.
+- GDP (Gross Domestic Product) is used as a measurement of economic growth, calculating the total value of all goods and services produced within a country's borders.
+- However, GDP has limitations as a measure of growth because it does not account for non-market transactions, informal economy activities, or environmental degradation.
+- Diagrams can visually represent the economic cycle, including phases like boom, downturn, recession, and recovery, each affecting economic growth, inflation, and unemployment differently.
+- Economic growth impacts various aspects like employment, standards of living, poverty levels, productive potential, inflation rates, and the environment.
+
+b) Low and stable inflation:
+- Inflation refers to the increase in the general price level of goods and services over a period of time.
+- Deflation is the opposite, where prices decrease.
+- CPI (Consumer Price Index) is a commonly used index to measure inflation by tracking the changes in the prices of a basket of goods and services typically purchased by households.
+- Types of inflation include demand-pull (when aggregate demand exceeds supply, causing prices to rise) and cost-push (when production costs increase, leading to price hikes).
+- Inflation is related to interest rates; central banks may adjust rates to control inflation.
+- Inflation impacts prices, wages, exports, unemployment rates, menu costs (costs of changing prices), shoe leather costs (time and effort in reducing cash holdings due to inflation), uncertainty, business and consumer confidence, and investment levels.

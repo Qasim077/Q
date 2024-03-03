@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50 auto;
+  }
+
+  .section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .section:last-child {
+    margin-right: 0;
+  }
+
+  .section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333333;
+  }
+
+  .section .content .line {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+  }
+
+  .section .content .line:last-child {
+    border-bottom: none;
+  }
